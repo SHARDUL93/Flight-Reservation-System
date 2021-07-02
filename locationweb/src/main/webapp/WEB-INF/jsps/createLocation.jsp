@@ -19,5 +19,7 @@
 	</pre>
 	</form>
 	${msg}
+	<br>
+	<a href = "displayLocations">View All</a>
 </body>
 </html>

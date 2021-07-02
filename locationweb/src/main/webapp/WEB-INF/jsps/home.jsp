@@ -7,6 +7,6 @@
 <title>Home Page</title>
 </head>
 <body>
-<h2>Home Page!</h2>
+<h3 color="blue">Home Page!</h3>
 </body>
 </html>
