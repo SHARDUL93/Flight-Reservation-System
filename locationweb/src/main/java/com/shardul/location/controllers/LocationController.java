@@ -11,12 +11,16 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import com.shardul.location.entities.Location;
 import com.shardul.location.service.LocationService;
+import com.shardul.location.util.EmailUtil;
 
 @Controller
 public class LocationController {
 
 	@Autowired
 	LocationService service;
+
+	@Autowired
+	EmailUtil emailUtil;
 
 	@RequestMapping("/")
 	public String home() {
@@ -33,6 +37,7 @@ public class LocationController {
 		Location saveLocation = service.saveLocation(location);
 		String msg = "Location saved with id: " + saveLocation.getId();
 		modelMap.addAttribute("msg", msg);
+		emailUtil.sendEmail("mdummy793@gmail.com", "Location Saved", "Location Saved Successfully and about to return a response. "+msg);
 		return "createLocation";
 	}
 

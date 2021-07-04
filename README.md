@@ -7,4 +7,6 @@ using spring boot framework
 3. MySQL Workbench
 4. Browser
 
+#Important Links
+https://myaccount.google.com/lesssecureapps
 
