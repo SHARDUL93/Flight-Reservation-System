@@ -6,11 +6,11 @@ using spring boot framework
 2. STS
 3. MySQL Workbench
 4. Browser
+5. Postman Collection
 
-<<<<<<< HEAD
 #Important Links
 https://myaccount.google.com/lesssecureapps
-=======
-# Starter URL : http://localhost:8080/locationweb/showCreate
->>>>>>> dde599e809d9cb07acdefc8ab2885051c06ed34a
+
+# HOME URL : http://localhost:8080/locationweb
+
 

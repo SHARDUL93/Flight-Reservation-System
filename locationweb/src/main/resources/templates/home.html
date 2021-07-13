@@ -1,12 +1,14 @@
-<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-    pageEncoding="ISO-8859-1"%>
+
 <!DOCTYPE html>
-<html>
+<html xmlns:th="https://thymeleaf.org">
 <head>
 <meta charset="ISO-8859-1">
 <title>Home Page</title>
 </head>
 <body>
-<h3 color="blue">Home Page!</h3>
+	<h3 style="color:Blue;">HOME PAGE!</h3>
+	<a th:href="@{'showCreate'}">CREATE LOCATION</a><br>
+	<a th:href="@{'displayLocations'}">DISPLAY LOCATIONS</a><br>
+	<a th:href="@{'generateReport'}">VIEW REPORT</a><br>
 </body>
 </html>
