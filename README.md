@@ -11,6 +11,6 @@ using spring boot framework
 #Important Links
 https://myaccount.google.com/lesssecureapps
 
-# HOME URL : http://localhost:8080/locationweb
+# Home Page: http://localhost:8080/flightreservation
 
 

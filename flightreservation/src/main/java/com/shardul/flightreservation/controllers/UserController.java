@@ -1,6 +1,8 @@
 package com.shardul.flightreservation.controllers;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.ModelAttribute;
@@ -17,6 +19,8 @@ public class UserController {
 	@Autowired
 	private UserRepository userRepository;
 
+	private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
+
 	@RequestMapping("/showReg")
 	public String showRegistrationPage() {
 		return "login/registerUser";
@@ -25,6 +29,12 @@ public class UserController {
 	@RequestMapping(value = "/registerUser", method = RequestMethod.POST)
 	public String register(@ModelAttribute("user") User user) {
 		userRepository.save(user);
+		return "login/login";
+	}
+
+	@RequestMapping("/showLogin")
+	public String showLoginPage() {
+		LOGGER.info("Inside showLoginPage()");
 		return "login/login";
 	}
 
