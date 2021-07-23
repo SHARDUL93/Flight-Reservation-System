@@ -10,6 +10,8 @@ import com.shardul.flightreservation.entities.Reservation;
 import com.shardul.flightreservation.repos.FlightRepository;
 import com.shardul.flightreservation.repos.PassengerRepository;
 import com.shardul.flightreservation.repos.ReservationRepository;
+import com.shardul.flightreservation.util.EmailUtil;
+import com.shardul.flightreservation.util.PDFGenerator;
 
 @Service
 public class ReservationServiceImpl implements ReservationService {
@@ -22,6 +24,12 @@ public class ReservationServiceImpl implements ReservationService {
 
 	@Autowired
 	ReservationRepository reservationRepository;
+
+	@Autowired
+	PDFGenerator pdfGenerator;
+
+	@Autowired
+	EmailUtil emailUtil;
 
 	@Override
 	public Reservation bookFlight(ReservationRequest request) {
@@ -42,6 +50,12 @@ public class ReservationServiceImpl implements ReservationService {
 		reservation.setCheckedIn(false);
 
 		Reservation savedReservation = reservationRepository.save(reservation);
+
+		String filePath = "C:/Users/Dell/Documents/workspace-sts-3.9.12.RELEASE/flightreservation/reservations/reservation"
+				+ savedReservation.getId() + ".pdf";
+		pdfGenerator.generateItinerary(savedReservation, filePath);
+
+		emailUtil.sentItineary(passenger.getEmail(), filePath);
 
 		return savedReservation;
 	}

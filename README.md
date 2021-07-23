@@ -8,9 +8,11 @@ using spring boot framework
 4. Browser
 5. Postman Collection
 
-#Important Links
-https://myaccount.google.com/lesssecureapps
+# Important Links
+1. https://myaccount.google.com/lesssecureapps
+2. https://mvnrepository.com
 
-# Home Page: http://localhost:8080/flightreservation
-
+# Page URLs: 
+Flight reservation - http://localhost:8080/flightreservation
+Flight checkin- http://localhost:9090/flightcheckin/showStartCheckin
 
