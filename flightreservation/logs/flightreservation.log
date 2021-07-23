@@ -1,0 +1,91 @@
+2021-07-23 20:42:53.326  INFO 13424 --- [main] c.s.f.FlightreservationApplication       : Starting FlightreservationApplication using Java 13.0.2 on DESKTOP-H6T2KI7 with PID 13424 (C:\Users\Dell\Documents\workspace-sts-3.9.12.RELEASE\flightreservation\target\classes started by Dell in C:\Users\Dell\Documents\workspace-sts-3.9.12.RELEASE\flightreservation)
+2021-07-23 20:42:53.336  INFO 13424 --- [main] c.s.f.FlightreservationApplication       : No active profile set, falling back to default profiles: default
+2021-07-23 20:42:54.330  INFO 13424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 20:42:54.423  INFO 13424 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 80 ms. Found 4 JPA repository interfaces.
+2021-07-23 20:42:55.104  INFO 13424 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-23 20:42:55.116  INFO 13424 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 20:42:55.117  INFO 13424 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-23 20:42:55.606  INFO 13424 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-07-23 20:42:55.626  INFO 13424 --- [main] o.a.c.c.C.[.[.[/flightreservation]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 20:42:55.626  INFO 13424 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2204 ms
+2021-07-23 20:42:55.935  INFO 13424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-23 20:42:56.323  INFO 13424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-23 20:42:56.403  INFO 13424 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 20:42:56.492  INFO 13424 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-23 20:42:56.778  INFO 13424 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 20:42:56.942  INFO 13424 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 20:42:57.681  INFO 13424 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 20:42:57.695  INFO 13424 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 20:42:58.420  WARN 13424 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-23 20:42:58.675  INFO 13424 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2021-07-23 20:42:58.874  WARN 13424 --- [main] ConfigServletWebServerApplicationContext : Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2021-07-23 20:42:58.879  INFO 13424 --- [main] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 20:42:58.882  INFO 13424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-07-23 20:42:58.901  INFO 13424 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2021-07-23 20:42:58.904  INFO 13424 --- [main] o.apache.catalina.core.StandardService   : Stopping service [Tomcat]
+2021-07-23 20:42:58.925  INFO 13424 --- [main] ConditionEvaluationReportLoggingListener : 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-07-23 20:42:58.957 ERROR 13424 --- [main] o.s.b.d.LoggingFailureAnalysisReporter   : 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2021-07-23 20:43:33.130  INFO 12892 --- [main] c.s.f.FlightreservationApplication       : Starting FlightreservationApplication using Java 13.0.2 on DESKTOP-H6T2KI7 with PID 12892 (C:\Users\Dell\Documents\workspace-sts-3.9.12.RELEASE\flightreservation\target\classes started by Dell in C:\Users\Dell\Documents\workspace-sts-3.9.12.RELEASE\flightreservation)
+2021-07-23 20:43:33.135  INFO 12892 --- [main] c.s.f.FlightreservationApplication       : No active profile set, falling back to default profiles: default
+2021-07-23 20:43:34.135  INFO 12892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-07-23 20:43:34.240  INFO 12892 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94 ms. Found 4 JPA repository interfaces.
+2021-07-23 20:43:34.884  INFO 12892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2021-07-23 20:43:34.894  INFO 12892 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2021-07-23 20:43:34.894  INFO 12892 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.48]
+2021-07-23 20:43:35.371  INFO 12892 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2021-07-23 20:43:35.383  INFO 12892 --- [main] o.a.c.c.C.[.[.[/flightreservation]       : Initializing Spring embedded WebApplicationContext
+2021-07-23 20:43:35.383  INFO 12892 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 2173 ms
+2021-07-23 20:43:35.650  INFO 12892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2021-07-23 20:43:36.045  INFO 12892 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2021-07-23 20:43:36.137  INFO 12892 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-07-23 20:43:36.263  INFO 12892 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.32.Final
+2021-07-23 20:43:36.556  INFO 12892 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2021-07-23 20:43:36.723  INFO 12892 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.MySQL8Dialect
+2021-07-23 20:43:37.448  INFO 12892 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-07-23 20:43:37.461  INFO 12892 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 20:43:38.139  WARN 12892 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2021-07-23 20:43:38.441  INFO 12892 --- [main] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: ServletContext resource [/index.html]
+2021-07-23 20:43:38.968  INFO 12892 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path '/flightreservation'
+2021-07-23 20:43:38.981  INFO 12892 --- [main] c.s.f.FlightreservationApplication       : Started FlightreservationApplication in 6.42 seconds (JVM running for 7.818)
+2021-07-23 20:44:03.228  INFO 12892 --- [http-nio-8080-exec-1] o.a.c.c.C.[.[.[/flightreservation]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2021-07-23 20:44:03.229  INFO 12892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2021-07-23 20:44:03.245  INFO 12892 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 2 ms
+2021-07-23 20:44:03.280  INFO 12892 --- [http-nio-8080-exec-1] c.s.f.controllers.UserController         : Inside showLoginPage()
+2021-07-23 20:44:04.801  WARN 12892 --- [http-nio-8080-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [360] milliseconds.
+2021-07-23 20:44:10.145  INFO 12892 --- [http-nio-8080-exec-2] c.s.f.controllers.UserController         : Inside login() and email is: {}dum@gmail.com
+2021-07-23 20:44:10.146 ERROR 12892 --- [http-nio-8080-exec-2] c.s.f.controllers.UserController         : ERROR
+2021-07-23 20:44:10.146  WARN 12892 --- [http-nio-8080-exec-2] c.s.f.controllers.UserController         : WARN
+2021-07-23 20:44:10.146  INFO 12892 --- [http-nio-8080-exec-2] c.s.f.controllers.UserController         : INFO
+2021-07-23 20:44:23.227  INFO 12892 --- [http-nio-8080-exec-3] c.s.f.controllers.FlightController       : Inside findFlights() FROM: AUS TO: NYC Departure Date: Mon Feb 05 00:00:00 IST 2018
+2021-07-23 20:44:23.248  INFO 12892 --- [http-nio-8080-exec-3] c.s.f.controllers.FlightController       : Flight found are: [Flight [flightNumber=AA1, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 03:14:07.0], Flight [flightNumber=AA2, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 05:14:07.0], Flight [flightNumber=AA3, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 06:14:07.0], Flight [flightNumber=SW1, operatingAirlines=South West, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 07:14:07.0]]
+2021-07-23 20:44:25.715  INFO 12892 --- [http-nio-8080-exec-4] c.s.f.controllers.ReservationController  : Inside showCompleteReservation() invoked with flightId: 3
+2021-07-23 20:44:25.777  INFO 12892 --- [http-nio-8080-exec-4] c.s.f.controllers.ReservationController  : Flight is Flight [flightNumber=AA3, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 06:14:07.0]
+2021-07-23 20:45:44.824  INFO 12892 --- [http-nio-8080-exec-7] c.s.f.controllers.ReservationController  : Inside completeReservation()  ReservationRequest [flightId=3, passengerFirstName=KAILASH CHANDRA SINGH, passengerLastName=BISHT, passengerEmail=mdummy793@gmail.com, passengerPhone=8888999977, nameOnTheCard=KCS BISHT, cardNumber=111111111111, expirationDate=12-12-2021, securityCode=456]
+2021-07-23 20:45:44.825  INFO 12892 --- [http-nio-8080-exec-7] c.s.f.services.ReservationServiceImpl    : Inside bookFlight()
+2021-07-23 20:45:44.825  INFO 12892 --- [http-nio-8080-exec-7] c.s.f.services.ReservationServiceImpl    : Fetching flight for flight id: 3
+2021-07-23 20:45:44.835  INFO 12892 --- [http-nio-8080-exec-7] c.s.f.services.ReservationServiceImpl    : Saving the passenger :Passenger [firstName=KAILASH CHANDRA SINGH, lastName=BISHT, middleName=null, email=mdummy793@gmail.com, phone=8888999977]
+2021-07-23 20:45:45.304  INFO 12892 --- [http-nio-8080-exec-7] c.s.f.services.ReservationServiceImpl    : Saving the reservation :Reservation [checkedIn=false, numberOfBags=0, passenger=Passenger [firstName=KAILASH CHANDRA SINGH, lastName=BISHT, middleName=null, email=mdummy793@gmail.com, phone=8888999977], flight=Flight [flightNumber=AA3, operatingAirlines=American Airlines, departureCity=AUS, arrivalCity=NYC, dateOfDeparture=2018-02-05 00:00:00.0, estimatedDepartureTime=2018-02-05 06:14:07.0]]
+2021-07-23 20:45:45.524  INFO 12892 --- [http-nio-8080-exec-7] c.s.f.services.ReservationServiceImpl    : Generating the itinerary
+2021-07-23 20:45:45.525  INFO 12892 --- [http-nio-8080-exec-7] c.s.flightreservation.util.PDFGenerator  : Inside generateItinerary()
+2021-07-23 20:45:46.351  INFO 12892 --- [http-nio-8080-exec-7] c.s.f.services.ReservationServiceImpl    : Sending the itinerary
+2021-07-23 20:45:46.351  INFO 12892 --- [http-nio-8080-exec-7] c.s.flightreservation.util.EmailUtil     : Inside sentItineary()
+2021-07-23 20:45:52.924  INFO 12892 --- [http-nio-8080-exec-7] c.s.f.controllers.ReservationController  : Reservation created successfully and the id is :5
+2021-07-23 20:49:10.848  INFO 12892 --- [RMI TCP Connection(2)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2021-07-23 20:49:11.167  INFO 12892 --- [RMI TCP Connection(2)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-07-23 20:49:11.170  INFO 12892 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2021-07-23 20:49:11.187  INFO 12892 --- [RMI TCP Connection(2)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.

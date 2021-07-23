@@ -30,4 +30,11 @@ public class ReservationUpdateRequest {
 		this.numberOfBags = numberOfBags;
 	}
 
+	@Override
+	public String toString() {
+		return "ReservationUpdateRequest [id=" + id + ", checkedIn=" + checkedIn + ", numberOfBags=" + numberOfBags
+				+ "]";
+	}
+	
+
 }

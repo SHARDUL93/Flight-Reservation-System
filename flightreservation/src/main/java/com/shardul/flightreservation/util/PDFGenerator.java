@@ -13,10 +13,17 @@ import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import com.shardul.flightreservation.entities.Reservation;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 @Component
 public class PDFGenerator {
+	
+	private static final Logger LOGGER = LoggerFactory.getLogger(PDFGenerator.class);
 
 	public void generateItinerary(Reservation reservation, String filePath) {
+		
+		LOGGER.info("Inside generateItinerary()");
 
 		Document document = new Document();
 
@@ -28,6 +35,7 @@ public class PDFGenerator {
 			document.close();
 
 		} catch (FileNotFoundException | DocumentException e) {
+			LOGGER.error("Exception inside generateItinerary() "+e);
 			e.printStackTrace();
 		}
 	}
