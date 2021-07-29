@@ -1,0 +1,5 @@
+pom.xml:
+<packaging>jar</packaging>
+
+deploying in tomcat/ jetty server:
+java -jar flightreservation.jar

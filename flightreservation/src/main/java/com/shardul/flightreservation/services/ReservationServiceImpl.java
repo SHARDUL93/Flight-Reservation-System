@@ -1,8 +1,11 @@
 package com.shardul.flightreservation.services;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.shardul.flightreservation.dto.ReservationRequest;
 import com.shardul.flightreservation.entities.Flight;
@@ -13,9 +16,6 @@ import com.shardul.flightreservation.repos.PassengerRepository;
 import com.shardul.flightreservation.repos.ReservationRepository;
 import com.shardul.flightreservation.util.EmailUtil;
 import com.shardul.flightreservation.util.PDFGenerator;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 @Service
 public class ReservationServiceImpl implements ReservationService {
@@ -41,6 +41,7 @@ public class ReservationServiceImpl implements ReservationService {
 	private static final Logger LOGGER = LoggerFactory.getLogger(ReservationServiceImpl.class);
 
 	@Override
+	@Transactional
 	public Reservation bookFlight(ReservationRequest request) {
 		
 		LOGGER.info("Inside bookFlight()");
